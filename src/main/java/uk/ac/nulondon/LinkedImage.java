@@ -265,8 +265,6 @@ public class LinkedImage {
             highlightSeam(findLowestE(), Color.RED);
             if (UserInterface.confirm("e")) {
                 removeSeam(findLowestE());
-            }else{
-//                saveImage();
             }
         }
     }
@@ -277,8 +275,6 @@ public class LinkedImage {
             highlightSeam(findBluest(), Color.BLUE);
             if (UserInterface.confirm("b")) {
                 removeSeam(findBluest());
-            }else{
-//                saveImage();
             }
         }
     }
@@ -312,7 +308,7 @@ public class LinkedImage {
 
         }
         width+=1;
-//        saveImage();
+
 
 
     }
@@ -415,22 +411,6 @@ public class LinkedImage {
         saveImage();
     }
 
-    public static void main(String args[]) throws Exception{
-        LinkedImage nature = new LinkedImage("src/main/resources/nature.jpeg");
-
-
-
-        for (int i = 0; i < 100; i++) {
-            List<PixelNode> lowE = nature.findLowestE();
-            nature.highlightSeam(lowE,Color.RED);
-            nature.removeSeam(lowE);
-            nature.quit();
-
-
-
-        }
-
-    }
 
 }
 
