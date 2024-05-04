@@ -9,5 +9,5 @@ For a live demo that visually shows each seam being identified then removed, run
 To continuously edit the image by removing the bluest seam, removing the lowest enegy seam, or undoing, run the "UserInterface's" main. Follow instructions given in the terminal.
 
 ## Video Demo
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/zpXWvhokJPs/0.jpg)](https://www.youtube.com/watch?v=zpXWvhokJPs)
+[![Video Demo](https://img.youtube.com/vi/zpXWvhokJPs/0.jpg)](https://www.youtube.com/watch?v=zpXWvhokJPs)
 
