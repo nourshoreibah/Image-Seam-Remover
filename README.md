@@ -8,6 +8,6 @@ For a live demo that visually shows an image being resized to 25% of its origina
 
 To continuously edit the image by removing the bluest seam, removing the lowest enegy seam, or undoing, run the "UserInterface's" main. Follow instructions given in the terminal.
 
-## Video Demo
+## Video Demo (click to play)
 [![Video Demo](https://img.youtube.com/vi/zpXWvhokJPs/0.jpg)](https://www.youtube.com/watch?v=zpXWvhokJPs)
 
