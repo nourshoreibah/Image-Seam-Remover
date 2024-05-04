@@ -35,20 +35,21 @@ public class LiveDemo {
         JFrame frame = new JFrame("Seam Slicing");
         frame.setSize(width, height);
         JLabel label = new JLabel();
-        label.setIcon(new ImageIcon(testImage.generateBufferedImage().getScaledInstance(width, height, Image.SCALE_SMOOTH)));
+        label.setHorizontalAlignment(JLabel.CENTER);
+        label.setIcon(new ImageIcon(testImage.generateBufferedImage()));
         frame.add(label);
         frame.pack();
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         int ogWidth = testImage.width;
         List<PixelNode> lowE;
-        for (int i = 0; i < (ogWidth*.75); i++) {
+        for (int i = 0; i < (ogWidth*.5); i++) {
             lowE = testImage.findLowestE();
             testImage.highlightSeam(lowE, Color.RED);
-            label.setIcon(new ImageIcon(testImage.generateBufferedImage().getScaledInstance(width, height + i, Image.SCALE_SMOOTH)));
+            label.setIcon(new ImageIcon(testImage.generateBufferedImage()));
             testImage.unHighlightSeam(lowE);
             testImage.removeSeam(lowE);
-            label.setIcon(new ImageIcon(testImage.generateBufferedImage().getScaledInstance(width, height + i, Image.SCALE_SMOOTH)));
+            label.setIcon(new ImageIcon(testImage.generateBufferedImage()));
 
         }
 
