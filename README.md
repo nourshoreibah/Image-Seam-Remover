@@ -1,4 +1,4 @@
-# Image Seam Removal
+# Image Seam Remover
 
 ## Description
 This project is an extension of the my Fundementals of Computer Science II final project. The initial goal was to create a program that identifies the most blue or lowest energy (least impact when removed) seam in an image, then removes it at the user's request (via the terminal). The user can also undo removals and save a final image. Seam removal and reinsertion needed to be O(n) time complexity. To further this project, I added the ability to watch multiple low energy seams be removed from the image in real time using JFrame.
